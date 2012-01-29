@@ -15,7 +15,7 @@ Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
 
-### Examples
+### Examples中文加入
 
 This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
 
@@ -23,16 +23,35 @@ This website is created with Jekyll. [Other Jekyll websites](https://github.com/
 
 ### What does Jekyll Do?
 
-Jekyll is a ruby gem you install on your local system.
-Once there you can call `jekyll --server` on a directory and provided that directory
-is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, 
-compute categories, tags, permalinks, and construct your pages from layout templates and partials.
 
-Once parsed, Jekyll stores the result in a self-contained static `_site` folder.
-The intention here is that you can serve all contents in this folder statically from a plain static web-server.
+转自：http://www.wybai.net/?p=273
 
-You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags
-on each request, Jekyll does this once _beforehand_ and caches the _entire website_ in a folder for serving statically.
+
+iscroll是什么？ 
+
+iscroll.js是Matteo Spinelli开发的一个js文件，使用原生js编写，不依赖与任何js框架。旨在解决移动webkit系浏览器的区域滚动问题，兼容mobile safari、android默认浏览器、safari、chrome、firefox5+、opera11+、IE9+及其他webkit核心浏览器。最新版本为iscroll4。 
+
+
+iscroll的用武之地 
+
+1.区域滚动 
+
+我们在pc端web开发中，有时会用固定某一区域的宽度和高度，然后使用overflow:auto，使其内容在该区域内滚动。 
+
+iphone默认浏览器（mobile safari）也支持固定区域的滚动，但必须双指滑动操作，而且没有滚动条。mobile safari中的单指滑动只针对页面级别，不针对页面元素。这样的操作体验很麻烦，而且很多用户根本不知道双指能够区域滑动。 
+
+android自带浏览器也支持区域滚动，且可以单指滑动操作，但是滑动起来卡的半死半活，很不流畅。 
+
+使用iscroll,可以完美解决上述问题了，不仅可以在iphone和android上单指滑动，而且滑动起来流畅之极，酣畅淋漓。滑动过程中也有漂亮的滚动条提示，让你舒心不已。 
+
+2.固定定位 
+
+固定定位不是iscroll的原生用法，而是使用iscroll协助解决固定定位问题。 
+
+话说iphone很先进，但就是不支持position:fixed。这下苦了我们了，固定定位怎么解决啊，我们会经常遇到固定标题栏、固定工具栏等情况啊！！ 
+
+使用iscroll协助解决：首先获取浏览器窗口高度；然后获取固定工具栏的高度；接着将除固定工具栏之外的内容全部放在一个固定区域内，该固定区域的高度=窗口高度-工具栏高度；之后对固定区域使用iscroll。这样，整个html页面的高度正好等于窗口高度，页面级别不会出现滚动，工具栏就一直固定在当前的位置。在固定区域内滑动，可以查看页面其他内容，不会影响工具栏的定位。 
+
 
 ### Jekyll is Not Blogging Software
 
